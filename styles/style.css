@@ -199,3 +199,41 @@ article > p {
   border-radius: 100px;
   border: 0px;
 }
+
+.tooltip-container {
+    position: relative;
+    display: flex;
+    place-content: center;
+}
+
+p#tooltip-text {
+    display: none;
+    position: absolute;
+    top: -60px;
+    z-index: 1;
+    background: #171717;
+    padding: 8px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 12px;
+    animation: fadeIn 0.6s;
+}
+
+p#tooltip-text:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border: 8px solid transparent;
+  border-top: 8px solid #171717;
+}
+
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
