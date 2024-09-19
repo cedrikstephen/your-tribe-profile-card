@@ -107,9 +107,10 @@ article > p {
   display: flex;
   justify-content: center;
   border-radius: 100px;
+  margin: auto
 }
 
-.image-container img {
+.image-container img{
   width: 10%;
   height: auto;
   margin: 0px 10px;
